@@ -32,7 +32,8 @@ namespace Gs_vs2019_Promo4
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Hello World!");
+                    await context.Response.WriteAsync("<h1>Hello World!<h1>");
+                    await context.Response.WriteAsync("<h>Welcome to Visual Studio</h1>");
                 });
             });
         }
